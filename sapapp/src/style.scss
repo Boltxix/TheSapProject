@@ -1,0 +1,326 @@
+$lightGreen : #b9e7e7;
+
+.app {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .container {
+        width: 1024px;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        //LOGIN REGISTER
+        .auth {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+
+            h1 {
+                font-size: 20px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color: white;
+                width: 200px;
+                gap: 20px;
+            }
+
+            input {
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+
+            p {
+                color: red;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            button {
+                padding: 10px;
+                border: none;
+                background-color: darkslategray;
+                color: white;
+            }
+
+            span {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        //NAVBAR
+        .navbar {
+            .container {
+                padding: 10px 0px;
+                display: flex;
+                justify-content: space-between;
+
+
+                .logo {
+                    width: 120px;
+                }
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //FOOTER
+
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+
+            img {
+                height: 50px;
+            }
+        }
+
+
+        //HOME
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 0.3rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1rem;
+                text-align: center;
+                margin-bottom: 1rem;
+
+            }
+
+            .btn {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 1.25rem;
+                transition: all 0.2s;
+
+
+                &:hover {
+                    background-color: darkslategray;
+                }
+            }
+        }
+
+        //ADMIN PAGE
+        .error {
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .admin {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 50px;
+                background-color: #f5f5f5;
+                border-radius: 10px;
+                text-align: center;
+
+                h1 {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                    color: #333;
+                }
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    color: #666;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 50px;
+                }
+
+                th,
+                td {
+                    padding: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th {
+                    background-color: #333;
+                    color: #fff;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                button {
+                    background-color: #333;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        //STUDENT
+        .Error{
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .student {
+            background-color: #f9f9f9;
+            padding: 2rem;
+
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .display {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1rem;
+                    margin-top: 2rem;
+
+                    h4 {
+                        font-size: 1.2rem;
+                        margin-bottom: 0.5;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: b;
+                    }
+
+                }
+
+                button {
+                    padding: 10px;
+                    border: none;
+                    background-color: darkslategray;
+                    color: white;
+                    margin-bottom: 10px;
+                    &:hover {
+                            background-color: #3e8e41;
+                        }
+                }
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+
+                    .form-group {
+                        margin-bottom: 20px;
+                    }
+
+                    label {
+                        display: block;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+
+                    input[type="text"],
+                    input[type="email"] {
+                        border-radius: 5px;
+                        border: none;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        padding: 10px;
+                        width: 100%;
+                    }
+
+                    button {
+                        background-color: #4caf50;
+                        border: none;
+                        border-radius: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding: 10px 20px;
+
+                        &:hover {
+                            background-color: #3e8e41;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+}
